@@ -1,10 +1,20 @@
+let price = 0;
 document.getElementById('card1').addEventListener('click' , function(){
   const itemOne = getItemName('item1')
   SetOfItems(itemOne)
   const money = getItemValue('money1')
   console.log(typeof(money))
-   
+     price = parseInt(price) + parseInt(money)
+    const totalPrice = document.getElementById('total-price')
+    totalPrice.innerText = price 
 })
+
+
+
+
+
+
+
 // fetch the item id Name
 function getItemName(name){
     const Element = document.getElementById(name)
