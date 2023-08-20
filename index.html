@@ -205,8 +205,8 @@
            <div class="max-w-lg bg-white p-12 space-y-3 mb-4">
             <h1 class="font-medium text-2xl text-[#111111]">Have coupon?</h1>
            <div class="flex">
-            <input type="text" name="" id="" class="p-3 rounded-s-xl bg-[#1111110d]" placeholder="Coupon code">
-            <button class="text-xl font-semibold text-white bg-[#E527B2] p-3 rounded-e-xl" disabled>Apply</button>
+            <input type="text" name="" id="coupon-id" class="p-3 rounded-s-xl bg-[#1111110d]" placeholder="Coupon code">
+            <button class="text-xl font-semibold text-white bg-[#E527B2] p-3 rounded-e-xl" disabled id="apply-btn">Apply</button>
            </div>
            </div>
             <!-- coupon container -->
@@ -215,12 +215,23 @@
             <div id="itemsArea" class="space-y-4"></div>
             <p class="w-72 h-[1px] bg-black text-center space-y-3"></p>
             <div>
-                <p class="text-2xl font-medium">Total Price : <span id="total-price"></span></p>
-                <p class="text-2xl font-medium">Discount    :</p>
-                <p class="text-2xl font-medium">Total       :</p>
+                <p class="text-2xl font-medium">Total Price : <span id="total-price"></span> TK</p>
+                <p class="text-2xl font-medium">Discount    : <span id="Discount-price"></span> TK</p>
+                <p class="text-2xl font-medium">Total       : <span id="Total-price"></span> TK</p>
             </div>
             <p class="w-72 h-[1px] bg-black text-center"></p>
-            <button class="text-xl font-semibold text-white bg-[#E527B2] px-10 py-2 md:py-4 rounded-xl ml-12 absolute" disabled>Make Purchase</button>
+           <!-- Open the modal using ID.showModal() method -->
+            <button class="btn text-xl hover:bg-fuchsia-500 font-semibold text-white bg-[#E527B2]  rounded-xl ml-12 absolute" onclick="my_modal_5.showModal()"  id="purchase-btn">Make Purchase</button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box">
+                <h3 class="font-bold text-lg text-center">Congratulations</h3>
+                <p class="py-4 text-center">Your Purchase the product</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn  text-white bg-[#E527B2] text-xl font-semibold  hover:bg-fuchsia-500">GO Home</button>
+                </div>
+              </form>
+            </dialog>
            </div>
          
             <!-- cart items container start -->
