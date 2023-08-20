@@ -1,10 +1,11 @@
 let price = 0.00;
 let priceNum = parseFloat(price.toFixed(2))
-
+// item 1
 document.getElementById('card1').addEventListener('click' , function(){
   const itemOne = getItemName('item1')
   SetOfItems(itemOne)
   const money = getItemValue('money1')
+  console.log(money)
 
     priceNum = priceNum + money  
 
@@ -25,6 +26,136 @@ document.getElementById('card1').addEventListener('click' , function(){
     }
   
 })
+// item2
+document.getElementById('card2').addEventListener('click' , function(){
+  const itemOne = getItemName('item-2')
+  SetOfItems(itemOne)
+  const money = getItemValue('money-2')
+
+    priceNum = priceNum + money  
+
+    const totalPrice = document.getElementById('total-price')
+    totalPrice.innerText = priceNum; 
+    if(priceNum > 0){
+        document.getElementById('purchase-btn').disabled = false;   
+    }
+    else{
+        document.getElementById('purchase-btn').disabled = true; 
+    }
+    if(priceNum >= 200){
+        document.getElementById('apply-btn').disabled = false;
+        
+    }
+    else{
+        document.getElementById('apply-btn').disabled = true;
+    }
+  
+})
+// item3
+document.getElementById('card3').addEventListener('click' , function(){
+  const itemOne = getItemName('item-3')
+  SetOfItems(itemOne)
+  const money = getItemValue('money-3')
+
+    priceNum = priceNum + money  
+
+    const totalPrice = document.getElementById('total-price')
+    totalPrice.innerText = priceNum; 
+    if(priceNum > 0){
+        document.getElementById('purchase-btn').disabled = false;   
+    }
+    else{
+        document.getElementById('purchase-btn').disabled = true; 
+    }
+    if(priceNum >= 200){
+        document.getElementById('apply-btn').disabled = false;
+        
+    }
+    else{
+        document.getElementById('apply-btn').disabled = true;
+    }
+  
+})
+// item4
+document.getElementById('card4').addEventListener('click' , function(){
+  const itemOne = getItemName('item-4')
+  SetOfItems(itemOne)
+  const money = getItemValue('money-4')
+
+    priceNum = priceNum + money  
+
+    const totalPrice = document.getElementById('total-price')
+    totalPrice.innerText = priceNum; 
+    if(priceNum > 0){
+        document.getElementById('purchase-btn').disabled = false;   
+    }
+    else{
+        document.getElementById('purchase-btn').disabled = true; 
+    }
+    if(priceNum >= 200){
+        document.getElementById('apply-btn').disabled = false;
+        
+    }
+    else{
+        document.getElementById('apply-btn').disabled = true;
+    }
+  
+})
+// item5
+document.getElementById('card5').addEventListener('click' , function(){
+  const itemOne = getItemName('item-5')
+  SetOfItems(itemOne)
+  const money = getItemValue('money-5')
+
+    priceNum = priceNum + money  
+
+    const totalPrice = document.getElementById('total-price')
+    totalPrice.innerText = priceNum; 
+    if(priceNum > 0){
+        document.getElementById('purchase-btn').disabled = false;   
+    }
+    else{
+        document.getElementById('purchase-btn').disabled = true; 
+    }
+    if(priceNum >= 200){
+        document.getElementById('apply-btn').disabled = false;
+        
+    }
+    else{
+        document.getElementById('apply-btn').disabled = true;
+    }
+  
+})
+// item6
+document.getElementById('card6').addEventListener('click' , function(){
+  const itemOne = getItemName('item-6')
+  SetOfItems(itemOne)
+  const money = getItemValue('money-6')
+
+    priceNum = priceNum + money  
+
+    const totalPrice = document.getElementById('total-price')
+    totalPrice.innerText = priceNum; 
+    if(priceNum > 0){
+        document.getElementById('purchase-btn').disabled = false;   
+    }
+    else{
+        document.getElementById('purchase-btn').disabled = true; 
+    }
+    if(priceNum >= 200){
+        document.getElementById('apply-btn').disabled = false;
+        
+    }
+    else{
+        document.getElementById('apply-btn').disabled = true;
+    }
+  
+})
+
+
+
+
+// calculation
 document.getElementById('apply-btn').addEventListener('click' , function(){
              if(getInputValue('coupon-id') !== 'SELL200'){
                 return alert('Invalid Coupon')
@@ -75,3 +206,7 @@ function getItemValue(money){
     return ElementValueNumberDecimalNumber;
    
 }
+// page reload
+document.getElementById('go-home').addEventListener('click' , function(){
+    window.location.reload();
+})
