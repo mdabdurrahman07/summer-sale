@@ -1,5 +1,5 @@
-let price = 0.00;
-let priceNum = parseFloat(price.toFixed(2))
+let priceNum = 0;
+
 // item 1
 document.getElementById('card1').addEventListener('click' , function(){
   const itemOne = getItemName('item1')
@@ -7,7 +7,7 @@ document.getElementById('card1').addEventListener('click' , function(){
   const money = getItemValue('money1')
   console.log(money)
 
-    priceNum = priceNum + money  
+    priceNum = priceNum + money 
 
     const totalPrice = document.getElementById('total-price')
     totalPrice.innerText = priceNum; 
@@ -164,7 +164,7 @@ document.getElementById('apply-btn').addEventListener('click' , function(){
                    const discountPrice = priceNum * 20 / 100
                    document.getElementById('Discount-price').innerText = parseFloat(discountPrice.toFixed(2));
                    const subtotal = priceNum - discountPrice 
-                   document.getElementById('Total-price').innerText = parseFloat(subtotal.toFixed(2))
+                   document.getElementById('Total-price').innerText =  parseFloat(subtotal.toFixed(2));
              }
 })
 
@@ -200,10 +200,13 @@ function SetOfItems(items){
 function getItemValue(money){
     const Element = document.getElementById(money)
     const ElementValue3 = Element.innerText
+    
     const ElementValueNumber = parseFloat(ElementValue3)
-    const ElementValueNumberDecimalString = ElementValueNumber.toFixed(2)
-    const ElementValueNumberDecimalNumber = parseFloat(ElementValueNumberDecimalString)
-    return ElementValueNumberDecimalNumber;
+  
+    // const ElementNumberTotal = parseInt(ElementValueNumber)
+    console.log( ElementValueNumber)
+    
+    return  ElementValueNumber;
    
 }
 // page reload
