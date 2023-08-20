@@ -5,9 +5,8 @@ document.getElementById('card1').addEventListener('click' , function(){
   const itemOne = getItemName('item1')
   SetOfItems(itemOne)
   const money = getItemValue('money1')
-  console.log(money)
 
-    priceNum = priceNum + money 
+    priceNum = priceNum + money;
 
     const totalPrice = document.getElementById('total-price')
     totalPrice.innerText = priceNum; 
@@ -184,7 +183,6 @@ function getItemName(name){
 function getInputValue(input){
     const Element = document.getElementById(input)
     const ElementValue2 = Element.value
-    console.log(ElementValue2)
     return ElementValue2
 } 
 // fetch the item name and set it in the itemsArea
@@ -200,12 +198,7 @@ function SetOfItems(items){
 function getItemValue(money){
     const Element = document.getElementById(money)
     const ElementValue3 = Element.innerText
-    
     const ElementValueNumber = parseFloat(ElementValue3)
-  
-    // const ElementNumberTotal = parseInt(ElementValueNumber)
-    console.log( ElementValueNumber)
-    
     return  ElementValueNumber;
    
 }
