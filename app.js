@@ -154,7 +154,7 @@ document.getElementById('card6').addEventListener('click' , function(){
 
 
 
-// calculation
+// calculation & coupon validation 
 document.getElementById('apply-btn').addEventListener('click' , function(){
              if(getInputValue('coupon-id') !== 'SELL200'){
                 return alert('Invalid Coupon')
