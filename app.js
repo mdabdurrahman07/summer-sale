@@ -10,6 +10,7 @@ document.getElementById('card1').addEventListener('click' , function(){
 
     const totalPrice = document.getElementById('total-price')
     totalPrice.innerText = priceNum; 
+    document.getElementById('Total-price').innerText = priceNum
     if(priceNum > 0){
         document.getElementById('purchase-btn').disabled = false;   
     }
@@ -35,6 +36,7 @@ document.getElementById('card2').addEventListener('click' , function(){
 
     const totalPrice = document.getElementById('total-price')
     totalPrice.innerText = priceNum; 
+    document.getElementById('Total-price').innerText = priceNum;
     if(priceNum > 0){
         document.getElementById('purchase-btn').disabled = false;   
     }
@@ -60,6 +62,7 @@ document.getElementById('card3').addEventListener('click' , function(){
 
     const totalPrice = document.getElementById('total-price')
     totalPrice.innerText = priceNum; 
+    document.getElementById('Total-price').innerText = priceNum;
     if(priceNum > 0){
         document.getElementById('purchase-btn').disabled = false;   
     }
@@ -84,7 +87,8 @@ document.getElementById('card4').addEventListener('click' , function(){
     priceNum = priceNum + money  
 
     const totalPrice = document.getElementById('total-price')
-    totalPrice.innerText = priceNum; 
+    totalPrice.innerText = priceNum;
+    document.getElementById('Total-price').innerText = priceNum; 
     if(priceNum > 0){
         document.getElementById('purchase-btn').disabled = false;   
     }
@@ -110,6 +114,7 @@ document.getElementById('card5').addEventListener('click' , function(){
 
     const totalPrice = document.getElementById('total-price')
     totalPrice.innerText = priceNum; 
+    document.getElementById('Total-price').innerText = priceNum;
     if(priceNum > 0){
         document.getElementById('purchase-btn').disabled = false;   
     }
@@ -135,6 +140,7 @@ document.getElementById('card6').addEventListener('click' , function(){
 
     const totalPrice = document.getElementById('total-price')
     totalPrice.innerText = priceNum; 
+    document.getElementById('Total-price').innerText = priceNum
     if(priceNum > 0){
         document.getElementById('purchase-btn').disabled = false;   
     }
